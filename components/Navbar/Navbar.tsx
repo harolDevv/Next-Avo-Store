@@ -5,9 +5,11 @@ import React from 'react'
 
 import styles from './Navbar.module.scss'
 import ShoppingCartIcon from './ShoppingCartIcon'
+import { useCart } from '../../store/Cart'
 
 
 const Navbar = () => {
+  const { count: cartCount } = useCart()
   return (
         <nav className={styles.nav}>
             <menu>
@@ -15,7 +17,7 @@ const Navbar = () => {
                 <Avocado size='45px'/>
                 <span>Avo Store</span>
               </div>
-               <ShoppingCartIcon/>
+               <ShoppingCartIcon cartCount={cartCount} name='Canasta'/>
             </menu>
         </nav>
   )
