@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { useRouter } from 'next/router'
 import data from 'database/data'
+
+import styles from './[id].module.scss'
+
+import { MdAddShoppingCart } from 'react-icons/md';
+import { useRouter } from 'node_modules/next/router';
+
 const ProductItem = () => {
     // const router = useRouter()
 
@@ -25,9 +30,24 @@ const ProductItem = () => {
           
         }, [id])
   return (
-    <div>
-        {/* {router.query.id} */}
-        {productDetail?.name}
+    <div className={styles.home_product_detail}>
+      <section className={styles.header_product_detail}>
+        <div>
+          <img src={productDetail?.image} alt={productDetail?.name} />
+        </div>
+        <div>
+          <h3>{productDetail?.name}</h3>
+          <span>{productDetail?.price}</span>
+          <br />
+          <span className={styles.product_detail_sku}>{productDetail?.sku}</span>
+          <div className={styles.header_product_detail_inputs__container}>
+            <input type="number" name="" id="" />
+            <button type='button' className={styles.header_product_detail_button}>
+              <MdAddShoppingCart/> Add to Cart
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

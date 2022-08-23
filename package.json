@@ -20,10 +20,12 @@
   "homepage": "https://github.com/harolDevv/Next-Avo-Store#readme",
   "description": "",
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "@types/cors": "^2.8.12",
     "next": "^12.2.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0"
   },
   "devDependencies": {
     "@types/node": "^18.7.10",

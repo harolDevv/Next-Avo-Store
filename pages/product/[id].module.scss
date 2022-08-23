@@ -1,0 +1,32 @@
+$base-button: #21ba45;
+$base-back-span: #e8e8e8;
+
+.home_product_detail{
+    outline: 1px solid green;
+    max-width: 43rem;
+    margin: 0 auto;
+    margin-top: 80px;
+    .header_product_detail{
+        display: flex;
+        align-items: center;
+        .header_product_detail_inputs__container{
+            display: flex;
+            input[type='number']{
+                border: none;
+                box-shadow: 0px 0px 3px gray;
+                width: 215px;
+                border-radius: 5px 0px 0px 5px;
+                border: none;
+                outline: none;
+                padding-left: 5px;
+            }
+            .header_product_detail_button{
+                background-color: $base-button;
+                border: none;
+                border-radius: 0px 5px 5px 0px;
+                color: white;
+                padding: 13px 10px;
+            }
+        }
+    }
+}

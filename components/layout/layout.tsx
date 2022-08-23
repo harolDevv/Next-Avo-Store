@@ -1,3 +1,4 @@
+import Footer from '@components/Footer/footer'
 import Navbar from 'components/Navbar/Navbar'
 import React from 'react'
 
@@ -9,6 +10,7 @@ const Layout:React.FC<Props> = ({children}) => {
     <div>
         <Navbar/>
         {children}
+        <Footer/>
     </div>
   )
 }
