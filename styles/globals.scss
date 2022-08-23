@@ -4,6 +4,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+$green-bg :#a2a828ab;
+
 .home{
     display: flex;
     justify-content: center;
@@ -23,6 +25,20 @@
             width: auto;
             width: 300px;
             margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .3s all;
+            .card_info__container{
+                padding: 5px;
+                border-top: 1px solid rgb(211, 211, 211);
+            }
+            &:hover{
+                transform: scale(1.02);
+                box-shadow: 0px 0px 10px gray;
+            }
+            &:hover .card_info__container{
+                background-color: $green-bg;
+            }
         }
     }
 }

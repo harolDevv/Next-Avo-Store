@@ -1,5 +1,5 @@
 import Avocado from '@components/SVGicons/Avocado'
-import Link from 'next/link'
+import Link from 'node_modules/next/link'
 import React from 'react'
 
 
@@ -13,10 +13,12 @@ const Navbar = () => {
   return (
         <nav className={styles.nav}>
             <menu>
-              <div className={styles.AvoStore_container}>
-                <Avocado size='45px'/>
-                <span>Avo Store</span>
-              </div>
+              <Link href='/'>
+                <div className={styles.AvoStore_container}>
+                  <Avocado size='45px'/>
+                  <span>Avo Store</span>
+                </div>
+              </Link>
                <ShoppingCartIcon cartCount={cartCount} name='Canasta'/>
             </menu>
         </nav>
